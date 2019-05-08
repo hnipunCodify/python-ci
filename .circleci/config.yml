@@ -8,4 +8,4 @@ jobs:
       - checkout # check out source code to working directory
       - run:
           command: |
-            python test/math-test.py test
+            python -m unittest test.maths.MathTest
