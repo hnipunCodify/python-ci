@@ -4,8 +4,8 @@ jobs:
     working_directory: ~/python-ci
     docker:
       - image: circleci/python:3.7.1  # primary container for the build job
-  steps:
-    # ...
-    - run:
-      command: |
-        python test/math-test.py test
+    steps:
+      # ...
+      - run:
+        command: |
+          python test/math-test.py test
