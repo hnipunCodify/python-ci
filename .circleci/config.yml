@@ -5,7 +5,7 @@ jobs:
     docker:
       - image: circleci/python:3.7.1  # primary container for the build job
     steps:
-      # ...
+      - checkout # check out source code to working directory
       - run:
         command: |
           python test/math-test.py test
